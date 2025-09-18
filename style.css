@@ -105,18 +105,37 @@ body div {
 
     justify-content: center;
     align-items: stretch;
+    padding-bottom: 8%;
 }
 
 #quote{
+    display: flex;
+    flex-direction: column;
+
     background-color: #E5E7EB;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #quote p {
     font-size: 36px;
     font-weight: 300;
+    font-style: italic;
+
+    padding: 0;
+    margin: 0;
 }
 
 /* specificity 110 - 200 */
+
+#quote .signature {
+    text-align: end;
+
+
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: normal;
+}
 
 #cards .content {
     display: flex;

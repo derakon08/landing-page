@@ -1,7 +1,11 @@
 * {
     font-family: Roboto;
     font-size: 18px;
+
+    border: solid;
 }
+
+/* specificity 1 - 10 */
 
 body {
     display: flex;
@@ -22,7 +26,24 @@ h2 {
     color: #1F2937;
 }
 
+header {
+    display: flex;
+    flex: auto;
+
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    padding: 10px;
+    min-width: auto;
+}
+
 footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -30,15 +51,28 @@ footer {
 body div {
     display: flex;
     flex: 1;
+
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
+
+/* specificity 10 - 100 */
 
 .signup {
     background-color: #3882F6;
 }
 
+/* specificity 100 - 110 */
+
 #hero {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
     color: #F9FAF8;
+
+    justify-content: center;
+    align-items: stretch;
 }
 
 #quote{
@@ -47,9 +81,46 @@ body div {
 
 #header-logo {
     font-size: 24px;
+    margin-right: auto;
 }
 
 #quote p {
     font-size: 36px;
     font-weight: 300;
+}
+
+/* specificity 110 - 200 */
+
+#hero .image {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    background-color: gray;
+    min-height: 300px;
+}
+
+#hero .content {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+/* specificity 200 */
+
+#hero #presentation {
+    display: flex;
+    flex-direction: column;
+
+    flex: 2 1;
+
+    align-items: flex-start;
+    padding-left: 0;
 }

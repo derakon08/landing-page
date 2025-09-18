@@ -78,16 +78,18 @@ body div {
 .card {
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
     padding: 0;
     text-align: center;
+    max-width: max-content;
 }
 
 .card img {
     min-height: 150px;
-    min-width: auto;
+    min-width: 150px;
+    max-width: 150px;
     border: solid;
     border-color: #3882F6;
     border-radius: 15px;
@@ -133,10 +135,11 @@ body div {
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
     background-color: #1F2937;
     color: #E5E7EB; /*This is literally NOT the color from the image, what's up with the sheet?*/
+
+    display: flex;
+    flex-direction: column;
 
     justify-content: center;
     align-items: stretch;
@@ -175,19 +178,21 @@ body div {
 #cards .content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     justify-content: space-between;
+    align-items: flex-start;
     gap: 70px;
 }
 
 #hero .image {
-    display: flex;
+    color: #1F2937;
 
+    display: flex;
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
 
-    color: #1F2937;
     background-color: #E5E7EB;
     min-height: 300px;
 }
@@ -195,8 +200,10 @@ body div {
 #hero .content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     align-items: center;
+    gap: 30px;
 
     padding-top: 30px;
     padding-bottom: 50px;

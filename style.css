@@ -36,7 +36,7 @@ header {
     align-items: center;
     gap: 15px;
 
-    padding: 10px;
+    padding-bottom: 30px;
     min-width: auto;
 }
 
@@ -92,13 +92,16 @@ body div {
     align-items: center;
 
     min-width: min-content;
+    color: #E5E7EB;
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 #hero {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    color: #F9FAF8;
+    color: #E5E7EB; /*This is literally NOT the color from the image, what's up with the sheet?*/
 
     justify-content: center;
     align-items: stretch;
@@ -106,11 +109,6 @@ body div {
 
 #quote{
     background-color: #E5E7EB;
-}
-
-#header-logo {
-    font-size: 24px;
-    margin-right: auto;
 }
 
 #quote p {
@@ -135,7 +133,8 @@ body div {
     align-items: center;
     flex: 0 0 auto;
 
-    background-color: gray;
+    color: #1F2937;
+    background-color: #E5E7EB;
     min-height: 300px;
 }
 
@@ -151,6 +150,14 @@ body div {
 
 
 /* specificity 200 */
+
+#hero #header-logo {
+    font-size: 24px;
+    margin-right: auto;
+
+    color: #F9FAF8;
+    font-weight: bolder;
+}
 
 #hero #presentation {
     display: flex;
